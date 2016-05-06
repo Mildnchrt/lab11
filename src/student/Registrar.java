@@ -22,7 +22,9 @@ public class Registrar {
 	private static Registrar registrar = null;
 	private List<Student> students;
 	
-	
+	/**
+	 * Create student ArrayList
+	 */
 	private Registrar() {
 		students = new ArrayList<Student>();
 		// read the student date and create students
@@ -51,7 +53,11 @@ public class Registrar {
 		}
 		return registrar;
 	}
-
+	
+	/**
+	 * Get list of student
+	 * @return sutdent's list
+	 */
 	public List<Student> getStudents() {
 		return students;
 	}
